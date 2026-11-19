@@ -26,3 +26,11 @@ def test_idade_acima_de_100_e_rejeitada():
     resultado = idade_permitida(idade)
     # verificar
     assert resultado is False
+
+def test_idade_com_virgula_e_rejeitada():
+    # preparar
+    idade = 15.5
+    # agir
+    resultado = idade_permitida(idade)
+    # verificar
+    assert resultado is False
